@@ -1,0 +1,1 @@
+Copy-Item \\10.1.1.252\Signatures\$env:UserName\* -Filter *.htm -destination C:\Users\$env:UserName\AppData\Roaming\Microsoft\Signatures\ -Recurse -Force
