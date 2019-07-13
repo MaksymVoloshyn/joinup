@@ -14,6 +14,9 @@ function RenamePC
         Write-Host Введите новое имя ПК
         $name = Read-Host
         Rename-Computer -NewName $name -Force
+        Write-Host Sucsess!
+        Wait-Event -Timeout 5
+        Menu
         }
 
 function DomainAdd
