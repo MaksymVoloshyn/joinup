@@ -87,7 +87,7 @@ $TotalsRow=$objWorkbook.Worksheets.Item($SheetName).UsedRange.SpecialCells($xlCe
 #Выполняем перебор строк в открытом файле Excel
     for ($Row=1;$Row -le $TotalsRow; $Row++) {
         $PrintList=$objWorkbook.ActiveSheet.Cells.Item($Row, $PrintN).Value()
-        Write-Host $PrintList
+        Write-Host $Row $PrintList
         }
 Write-Host "Select item:"; $RowSel = Read-Host
 $PrintName=$objWorkbook.ActiveSheet.Cells.Item($RowSel, $PrintN).Value()
